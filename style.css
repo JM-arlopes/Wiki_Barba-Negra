@@ -368,24 +368,15 @@
     border-radius: 10px;
     line-height: 1.6em;
     padding: 1em;
-    width: 940px;
+    width: 850px;
     position: relative;
     background-image: url(img/background_section.jfif);
-}
-
-.chapeu {
-    display: inline;
-    position: absolute;
-    transform: rotate(10deg);
-    right: -100px;
-    top: -115px;
 }
 
 .apresentação p {
     color: white;
     position: relative;
 }
-
 
 .apresentação::before {
     content:"";
@@ -397,3 +388,20 @@
     opacity: 0.7;
     position: absolute;
 }
+
+.chapeu {
+    display: inline;
+    position: absolute;
+    transform: rotate(10deg);
+    right: -105px;
+    top: -120px;
+}
+
+.mihalk {
+    display: inline;
+    position: absolute;
+    height: 30vh;
+    left: -50px;
+    top: -140px;
+}
+
