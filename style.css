@@ -286,19 +286,23 @@
     font-weight: bold;
 }
 
+
 .corpo__secundario {
    font-size: 17px;
    font-weight: 600;
-   color: rgb(144, 144, 144);
+   /* color: rgb(144, 144, 144); */
+   color: var(--branco-principal);
    background-color: #1b2b2b;
    font-family: var(--fonte-alternativa);
 }
+
 
 .container_2 {
     display: grid;
     grid-template-columns: 50% 50%;
     height: 100vh;
 }
+
 
 .cabecalho {
     background-color: gray;
@@ -311,21 +315,18 @@
     background-position: bottom;
 }
 
+
 .container-cabecalho {
     display: grid;
     grid-template-columns: 50% 50%;
     height: 50vh;
-
 }
 
-.primeiro_grid {
-    margin: 1.5em 2em;
-
-}
 
 .imagem__cabecalho {
     width: 300px;
 }
+
 
 .lista__links {
     display: flex;
@@ -338,9 +339,14 @@
     font-weight: 400;
 }
 
+
 .container__principal {
     padding: 3em 0;
     height: 75vh;
+}
+
+
+.introdução {
     background-image: url(img/kuma-back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -350,7 +356,8 @@
     align-items: center;
 }
 
-.container__principal::before {
+
+.introdução::before {
     content:"";
     top: 0;
     right: 0;
@@ -362,32 +369,41 @@
     position: absolute;
 }
 
-.apresentação {
+
+.box_inicial {
     margin: 0 auto 0 50px;
+    position: relative;
+    background-image: url(img/background_section.jfif);
+}
+
+
+.text__box {
     border: 6px solid black;
     border-radius: 10px;
     line-height: 1.6em;
     padding: 1em;
     width: 850px;
-    position: relative;
-    background-image: url(img/background_section.jfif);
 }
 
-.apresentação p {
+
+.text__box p {
     color: white;
     position: relative;
 }
 
-.apresentação::before {
+
+.text__box::before {
     content:"";
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: #1b2b2b;
-    opacity: 0.7;
+    /* background: #1b2b2b; */
+    background: black;
+    opacity: 0.45;
     position: absolute;
 }
+
 
 .chapeu {
     display: inline;
@@ -397,11 +413,58 @@
     top: -120px;
 }
 
+
 .mihalk {
     display: inline;
     position: absolute;
     height: 30vh;
-    left: -50px;
-    top: -140px;
+    left: -45px;
+    top: -130px;
 }
 
+
+.second__container {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: 
+        linear-gradient(360deg, black, transparent 20%),
+        linear-gradient(black, transparent 15%),
+        url(img/back-areia.jpg);
+}
+
+.complete_box {
+
+}
+
+.title__box {
+    color: black;
+    margin-bottom: 0.3em;
+    font-weight: 900;
+    text-shadow: 3px 2px saddlebrown;
+}
+
+.second__box {
+    background-image: url(img/crocoboy_banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-shadow: 2px 2px rgb(155, 76, 20); 
+}
+
+.fixed-right {
+    height: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.fixed-left {
+    height: 300px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
