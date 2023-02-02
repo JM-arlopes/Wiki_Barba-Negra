@@ -278,7 +278,6 @@
 
 
 
-
 /* pagina 2 */
 
 .titulo__principal {
@@ -343,6 +342,7 @@
 .container__principal {
     padding: 3em 0;
     height: 75vh;
+    position: relative;
 }
 
 
@@ -354,6 +354,7 @@
     position: relative;
     display: flex;
     align-items: center;
+   
 }
 
 
@@ -383,6 +384,7 @@
     line-height: 1.6em;
     padding: 1em;
     width: 850px;
+    position: relative; 
 }
 
 
@@ -425,25 +427,38 @@
 
 .second__container {
     height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     background: 
         linear-gradient(360deg, black, transparent 20%),
         linear-gradient(black, transparent 15%),
         url(img/back-areia.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.complete_box {
+/* .complete_box {
+    width: 850px;
+} */
 
+.titulo-secundario {
+    margin-bottom: 0.3em;
+    font-weight: 900;
 }
 
 .title__box {
     color: black;
-    margin-bottom: 0.3em;
-    font-weight: 900;
     text-shadow: 3px 2px saddlebrown;
+}
+
+.title__box-2 {
+    color: black;
+    text-shadow: 3px 2px red;
+    text-align: center;
+    position: relative;
+    top: calc(10em - 4px);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    z-index: 1;
 }
 
 .second__box {
@@ -452,7 +467,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    text-shadow: 2px 2px rgb(155, 76, 20); 
+    text-shadow: 1px 2px saddlebrown; 
 }
 
 .fixed-right {
@@ -467,4 +482,56 @@
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+.third_box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.doffy {
+    width: 850px;
+    position: relative;
+}
+
+.complete__box {
+    margin: auto;
+    width: 850px;
+}
+
+.container_doffy {
+    height: 120vh;
+    background: linear-gradient(black 8%, darkred,#D90166);
+}
+
+.doffy_box {
+    /* background-image: url(img/cartaz-doffy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 900px 800px; */
+    position: relative;
+}
+
+
+
+.container_doffy::before {
+    content:"";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(img/cartaz-doffy4.0.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    opacity: 0.1;
+    position: absolute;
+}
+
+
+.transition {
+    height: 150px;
+    background: linear-gradient(black, #151413);
 }
