@@ -291,7 +291,7 @@
    font-weight: 600;
    /* color: rgb(144, 144, 144); */
    color: var(--branco-principal);
-   background-color: #1b2b2b;
+   /* background-color: #1b2b2b; */
    font-family: var(--fonte-alternativa);
 }
 
@@ -341,7 +341,7 @@
 
 .container__principal {
     padding: 3em 0;
-    height: 75vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -384,15 +384,18 @@
     line-height: 1.6em;
     padding: 1em;
     width: 850px;
-    position: relative; 
+    position: relative;
 }
 
 
-.text__box p {
+.text__box p, .text__box h2 {
     color: white;
     position: relative;
 }
 
+.text__box h2 {
+    text-align: center;
+}
 
 .text__box::before {
     content:"";
@@ -429,7 +432,7 @@
     height: 85vh;
     background: 
         linear-gradient(360deg, black, transparent 20%),
-        linear-gradient(black, transparent 15%),
+        /* linear-gradient(black, transparent 15%), */
         url(img/back-areia.jpg);
     display: flex;
     align-items: center;
@@ -485,10 +488,25 @@
 }
 
 .third_box {
+    background-image: url(img/banner-doffy_corte.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
+    border: 6px solid black;
+    border-radius: 10px;
+}
+
+.third_box::before {
+    content:"";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background: #1b2b2b; */
+    background: black;
+    opacity: 0.7;
+    position: absolute;
 }
 
 .doffy {
@@ -497,8 +515,9 @@
 }
 
 .complete__box {
-    margin: auto;
+    margin: 0 auto;
     width: 850px;
+
 }
 
 .container_doffy {
@@ -507,10 +526,10 @@
 }
 
 .doffy_box {
-    /* background-image: url(img/cartaz-doffy.jpg);
+    /* background-image: url(img/banner-doffy.jfif);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 900px 800px; */
+    background-size: contain; */
     position: relative;
 }
 
@@ -522,7 +541,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url(img/cartaz-doffy4.0.png);
+    background-image: url(img/cartazzz.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -534,4 +553,450 @@
 .transition {
     height: 150px;
     background: linear-gradient(black, #151413);
+}
+
+.fixed-doffy {
+    position: absolute;
+    height: 350px;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+}
+
+
+
+
+
+
+
+/* hancock */
+
+
+.complete_hancock-box {
+    width: 250px;
+    height: 250px;
+    
+}
+
+.container_hancock {
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(transparent, red);
+    /* background-image: url(img/coracao-back.png); */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
+}
+
+
+.box_hancock {
+    width: 250px;
+    height: 250px;
+    background-image: url(img/coracao-png-vermelho.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: scale(0.9);
+    /* position: absolute; */
+    line-height: 1px;
+    color: transparent;
+    transition: 2.1s all;
+    font-size: 1px;
+}
+
+.box_hancock:hover {
+    transform: scale(3.5);
+    font-size: 5px;
+    color: #d3d2d2;
+    text-shadow: 0.7px 0.7px black;
+}
+
+
+.box_hancock p {
+    display: block; 
+    position: absolute;
+    top: 28%;
+    left: 0;
+    text-align: center;
+    z-index: 0;
+}
+
+
+.box_hancock:hover p {
+    line-height: 1.39em;
+    font-size: 4px;
+    width: 78%;
+    margin: 0 6.9em;
+    background-image: url(img/hancock-bot.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    border-bottom: #00010A solid 1px;
+    border-top: #00010A solid 1px;
+}
+
+
+.box_hancock:hover p::after {
+    content:"";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, transparent, black);
+    position: absolute;
+    opacity: 0.09;
+}
+
+
+.box_hancock h2 {
+    display: block; 
+    position: relative;
+    text-align: center;
+    top: 25.5%;
+    left: 0;
+    
+}
+
+.box_hancock:hover h2 {
+    /* color: rgb(220, 0, 220); */
+    color: violet;
+    font-size: small;
+    text-transform: uppercase;
+    text-shadow: 1px 1px#00010A;
+}
+
+.coracao-top {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.gados {
+    position: absolute;
+    display: inline;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 42%;
+}
+
+
+.gados-2 {
+    position: absolute;
+    display: inline;
+    bottom: 15.8%;
+    left: 0;
+    z-index: 0;
+    /* height: 45.5%; */
+    height: 43%;
+}
+
+
+.gados-3 {
+    position: absolute;
+    display: inline;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    height: 16%;
+    /* width: 435px; */
+}
+
+
+.gados-4 {
+    position: absolute;
+    display: inline;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    height: 42%;
+}
+
+
+.gados-5 {
+    position: absolute;
+    display: inline;
+    bottom: 15.8%;
+    right: 0;
+    z-index: 0;
+    height: 45.5%;
+}
+
+
+.gados-6 {
+    position: absolute;
+    display: inline;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    height: 16%;
+    /* width: 435px; */
+}
+
+.gados-bot {
+    position: absolute;
+    display: inline;
+    bottom: 0;
+    left: 33%;
+    z-index: 0;
+    height: 12%;
+    width: 550px;
+}
+
+
+.coracao {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline; 
+    z-index: 0; 
+    text-align: center;
+}
+
+.cobra {
+    display: block;
+    position: relative;
+    height: 60px;
+    margin: 0 auto;
+    top: 140px;
+    transform:scale(0.001);
+}
+
+.box_hancock:hover .cobra {
+    transform: scale(1);
+}
+
+
+
+
+
+/* mihalk */
+
+.container_mihalk {
+    background: linear-gradient(transparent, black) , url(img/wallpaper_mihalk.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.complete_box-mihalk {
+
+}
+
+.box_mihalk {
+    background-image: url(img/Mihawk_wallpaper-cut.jpg);
+    background-position: center;
+}
+
+.espada_box {
+    display: inline;
+    height: 210px;
+    position: absolute;
+    top: -85%;
+    /* left: 60%; */
+    right: -6.5%;
+}
+
+
+
+/* Moriah */
+
+.container_moriah {
+    background: linear-gradient(transparent 80%, #050608), url(img/horror_moriah.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 150vh;
+}
+
+.container_moriah::before {
+    content:"";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(img/fogo_violeta.jfif);
+    background-size: cover;
+    position: absolute;
+    opacity: 0.1;
+}
+
+.complete_box-moriah {
+ margin-bottom: 8em;
+ z-index: 1;
+}
+
+.box_moriah {
+    background: url(img/banner_moriah.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #A8DAE5;
+}
+
+.box_moriah h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 0.3em;
+    font-weight: 900;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-shadow: 3.5px 3px rgba(128, 0, 128, 0.357);
+}
+
+/* kuma */
+
+.container_kuma {
+    height: 150vh;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(img/wallpaper_kuma-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+.complete_kuma {
+    width: 500px;
+    text-align: center;
+    transform: scale(0.15);
+    position: relative;
+    bottom: 13.5em;
+    transition: 2s all;
+}
+
+.complete_kuma:hover {
+    transform: scale(1);
+    bottom: 0;
+}
+
+.kuma_box {
+    color: transparent;
+    position: relative;
+}
+
+
+.complete_kuma:hover .kuma_box {
+    color: black;
+}
+
+
+.kuma_box p, .kuma_box h2 {
+    position: relative;
+    bottom: 5em;
+    margin: 0 1em 0 2em;
+    z-index: 1;
+}
+
+.segurando {
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    width: 350px;
+    transform: scale(0.001);
+}
+
+.pata {
+    display: inline;
+    position: absolute;
+    width: 750px;
+    z-index: 0;
+    top: -22em;
+    left: -5em;
+    transform: rotate(335deg);
+    
+}
+
+.complete_kuma:hover .kuma_box h2 {
+    text-align: center;
+    color: black;
+    font-weight: 900;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-shadow: 3.5px 3px gray;
+}
+
+.complete_kuma:hover .segurando {
+    transform: scale(1);
+}
+
+.container_jinbe {
+    background-image: url(img/wallpaper_mar.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.box_jinbe {
+    background-image: url(img/rosto-jinbe.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.title_jinbe {
+    text-align: center;
+    color: darkblue;
+    font-weight: 900;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-shadow: 3.5px 3px cyan;
+}
+
+.box_jinbe p {
+    text-shadow: ;
+}
+
+.complete_box-mihalk h2 {
+    text-align: center;
+    color: black;
+    font-weight: 900;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-shadow: 3.5px 3px darkgreen;
+}
+
+
+.transition {
+    height: 100px;
+}
+
+.transition_2 {
+    height: 100px;
+    background: linear-gradient(rgba(13,55,75,255), rgba(229,205,167,255));
+}
+
+.transition_3 {
+    height: 150px;
+    background: linear-gradient(black, #151413)
+}
+
+.transition_4 {
+    background: linear-gradient(#d9156f, white);
+}
+
+.transition_5 {
+    height: 20px;
+    background: linear-gradient(red, rgba(11,59,82));
+}
+
+.transition_6 {
+    background: linear-gradient(black, #085291);
+}
+
+.transition_7 {
+    background: linear-gradient(black, #085291);
 }
