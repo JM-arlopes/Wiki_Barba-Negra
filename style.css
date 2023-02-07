@@ -66,7 +66,6 @@
 
 
 .lista__links {
-    color: #4d197d;
     display: flex;
     text-align: center;
     justify-content: space-evenly;
@@ -78,6 +77,7 @@
 }
 
 .link {
+    color: #4d197d;
     font-size: 21px;
     /* margin: 1em 0.5em; */
     font-weight: 400;
