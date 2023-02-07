@@ -9,276 +9,9 @@
     --fonte-link: 'Allerta', sans-serif;
     --fonte-alternativa: 'DM Sans', sans-serif;
 }
-
 * {
-    padding: 0;
-    margin: 0;
     text-decoration: none;
 }
-.plano-de-fundo {
-    background: linear-gradient(black 60%, var(--cor-de-fundo))
-}
-
-.corpo__principal {
-    background-color: var(--cor-de-fundo);
-    color: var(--branco-principal);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5em;
-}
-
-.principal {
-    background-image: url(img/os_sonhos.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    text-align: center;
-    align-items: center;
-    position: relative;
-}
-
-.principal::before {
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    /* background: linear-gradient(transparent, black); */
-    /* background: linear-gradient(transparent 50%, black); */
-    /* background: linear-gradient(transparent 60%, black); */
-    background: linear-gradient(transparent 70%, black);
-    /* background: linear-gradient(transparent 80%, black); */
-    position: absolute;
-}
-
-.container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.container__parafrase {
-    font-weight: 700;
-    font-size: 42px;
-    color: black;
-    position: relative;
-    bottom: 1em;
-    right: 1em;
-    font-family: var(--fonte-caligrafia);
-    text-decoration: underline;
-}
-
-.container__titulo {
-    font-weight: 600;
-    font-size: 25px;
-    color: black;
-    font-family: var(--fonte-principal);
-    /* text-decoration: underline;
-    text-transform: uppercase; */
-    padding: 0.5em;
-    border: 5px solid black;
-    border-radius: 15px;
-    margin-bottom: 1em;
-    
-}
-
-.marshall {
-    text-shadow: 2px 2px 3px black;
-    font-weight: 700;
-    font-size: 28px;
-}
-
-.barba {
-    text-shadow: 2px 1px #640064cb;
-    /* text-decoration:underline; */
-    font-weight: 700;
-    font-size: 28px;
-}
-
-.container__botao {
-    background:  #0495b5;
-    padding: 1em;
-    border: 3px solid black;
-    border-radius: 6px;
-    display: block;
-    color: black;
-    text-align: center;
-    margin-bottom: 1em;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 510;
-    transition: 0.5s all;
-}
-
-.container__botao:hover {
-    transform: scale(1.05);
-    background-color: black;
-    color: #800080;
-    border-color: #800080;
-}
-
-.botao_secundario {
-    background-color: #A8DAE5;
-}
-
-.container__aviso {
-    font-size: 12px;
-    font-weight: bold;
-    color: black;
-    text-decoration: underline;
-    text-align: start;
-}
-
-.container__imagem {
-    margin: 0em 0 0em 0;
-    width: 350px;
-    border-radius: 3px solid transparent;
-}
-
-.container__caixa {
-    margin: 0 6em;
-    position: relative;
-}
-
-.secundario {
-    align-items: center;
-    height: 90vh;
-}
-
-.conteudo__secundario {
-    margin: 0 7em;
-    /* border: 2px solid white; */
-    padding: 1em;
-    border-radius: 5px;
-}
-
-.secundario__imagem {
-    border: 5px solid transparent;
-    border-radius: 10px;
-    margin: 0 0 0 5em;
-    height: 340px;
-}
-
-.titulo-secundario {
-    margin-bottom: 0.5em;
-    font-weight: 700;
-    font-size: 48px;
-}
-
-.descricao__frase {
- color: var(--cinza-secundario);
- padding-bottom: 1em;
-}
-
-.imagem__terciaria {
-    margin: 0 1em 0 0;
-}
-
-.botao__terciario {
-    display: inline-block;
-}
-
-.container_triplo {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    margin: 1
-}
-
-.imagem__cartaz {
-    height: 450px;
-    margin: 0 0 0 6em;
-}
-
-.titulo-terciario {
-    margin-bottom: 0.5em;
-    font-weight: 700;
-    font-size: 40px;
-}
-
-.coloracao {
-    color: #800080;
-}
-
-.coloracao_2 {
-    color: #A8DAE5;
-}
-
-.dispositivos {
-    text-align: center;
-}
-
-.dispositivos__titulo {
-    font-weight: 700;
-    font-size: 48px;
-}
-
-.dispositivos__lista {
-    display: flex;
-    justify-content: center;
-    margin: 3em 0 5em;
-}
-
-.lista__item {
-    font-weight: 700;
-    font-size: 32px;
-}
-
-.dispositivos__lista li {
-    margin: 0 1.5em;
-}
-
-.rodape {
-    text-align: center;
-    background-color: #00010A;
-}
-
-.logo__rodape {
-    height: 75px;
-    margin: 2em 0;
-}
-
-.link_lista-completa {
-    display: flex;
-    justify-content: center;
-    
-}
-
-.link__lista a {
-  margin: 1em 0.5em;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--branco-principal);
-  transition: 350ms;
-}
-
-.link__lista a:hover {
-    color:  #A8DAE5;
-}
-
-.link__lista a:active {
-    color: #800080;
-}
-
-.frase__rodape {
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--cinza-secundario);
-    margin: 2em 10em;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* pagina 2 */
 
 .titulo__principal {
     text-transform: uppercase;
@@ -294,7 +27,12 @@
    /* background-color: #1b2b2b; */
    font-family: var(--fonte-alternativa);
 }
-
+ 
+.titulo-secundario {
+    margin-bottom: 0.5em;
+    font-weight: 700;
+    font-size: 48px;
+}
 
 .container_2 {
     display: grid;
@@ -328,15 +66,58 @@
 
 
 .lista__links {
+    color: #4d197d;
     display: flex;
     text-align: center;
     justify-content: space-evenly;
-    padding: 1em 0;
+    padding: 0.9em 0;
     font-family: var(--fonte-link);
     background-color: #00010A;
     font-size: 16px;
     font-weight: 400;
 }
+
+.link {
+    font-size: 21px;
+    /* margin: 1em 0.5em; */
+    font-weight: 400;
+    transition: 350ms;
+ }
+
+ .link:nth-child(1):hover {
+    color: gold;
+    text-shadow: 2px 1.5px saddlebrown;
+ }
+
+ .link:nth-child(2):hover {
+    color: goldenrod;
+    text-shadow: 2px 2px darkgreen;
+ }
+
+ .link:nth-child(3):hover {
+    color: black;
+    text-shadow: 1px 2px rgb(95, 0, 95);
+ }
+
+ .link:nth-child(4):hover {
+    color: darkgray;
+    text-shadow: 1px 1.5px white;
+ }
+
+ .link:nth-child(5):hover {
+    color: red;
+    text-shadow: 1px 1.5px pink;
+ }
+
+ .link:nth-child(6):hover {
+    color: violet;
+    text-shadow: 1px 1.5px red;
+ }
+
+ .link:nth-child(7):hover {
+    color: blue;
+    text-shadow:1.5px 1.1px cyan;
+ }
 
 
 .container__principal {
@@ -599,7 +380,8 @@
     background-position: center;
     background-size: contain;
     transform: scale(0.9);
-    /* position: absolute; */
+    position: absolute;
+    z-index: 1;
     line-height: 1px;
     color: transparent;
     transition: 2.1s all;
@@ -777,6 +559,7 @@
 /* mihalk */
 
 .container_mihalk {
+    height: 100vh;
     background: linear-gradient(transparent, black) , url(img/wallpaper_mihalk.jfif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -794,6 +577,19 @@
     background-image: url(img/Mihawk_wallpaper-cut.jpg);
     background-position: center;
 }
+.box_mihalk p {
+    text-shadow: 2px 2px darkgreen;
+    position: relative;
+    z-index: 1;
+}
+
+.mihalk_lateral {
+    display: inline;
+    height: 262.8px;
+    position: absolute;
+    right: -8.8em;
+    top: 0;
+}
 
 .espada_box {
     display: inline;
@@ -801,7 +597,27 @@
     position: absolute;
     top: -85%;
     /* left: 60%; */
-    right: -6.5%;
+    right: 8%;
+}
+
+.complete_box-mihalk h2 {
+    text-align: center;
+    color: black;
+    font-weight: 900;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-shadow: 3.5px 3px darkgreen;
+    z-index: 1;
+    position: relative;
+}
+
+.gaviao {
+    display: inline;
+    position: relative;
+    left: 10em;
+    top: 3em;
+    width: 60%;
+    z-index: 0;
 }
 
 
@@ -843,9 +659,15 @@
     color: #A8DAE5;
 }
 
+
+.box_moriah p {
+    text-shadow: 3px 2px #1d1337;
+}
+
+
 .box_moriah h2 {
     text-align: center;
-    color: white;
+    color: #C0C0C0;
     margin-bottom: 0.3em;
     font-weight: 900;
     font-size: 3em;
@@ -925,7 +747,7 @@
     font-weight: 900;
     font-size: 1.2em;
     text-transform: uppercase;
-    text-shadow: 3.5px 3px gray;
+    text-shadow: 2px 2px gray;
 }
 
 .complete_kuma:hover .segurando {
@@ -957,18 +779,8 @@
 }
 
 .box_jinbe p {
-    text-shadow: ;
+    text-shadow: 1px 1px cyan;
 }
-
-.complete_box-mihalk h2 {
-    text-align: center;
-    color: black;
-    font-weight: 900;
-    font-size: 3em;
-    text-transform: uppercase;
-    text-shadow: 3.5px 3px darkgreen;
-}
-
 
 .transition {
     height: 100px;
@@ -985,12 +797,17 @@
 }
 
 .transition_4 {
-    background: linear-gradient(#d9156f, white);
+    height: 13px;
+    background: url(img/coracao-back.png) , linear-gradient(#d8156e, white);
+    /* background-repeat: no-repeat; */
+    background-size: 1%;
+    /* background-position: bottom; */
 }
 
 .transition_5 {
-    height: 20px;
-    background: linear-gradient(red, rgba(11,59,82));
+    height: 13px;
+    background: url(img/coracao-back_inv.png) , linear-gradient(red, rgba(11,59,82));
+    background-size: 1%;
 }
 
 .transition_6 {
@@ -999,4 +816,44 @@
 
 .transition_7 {
     background: linear-gradient(black, #085291);
+}
+
+
+.rodape {
+    text-align: center;
+    background-color: #00010A;
+    padding: 2em 0;
+}
+
+.logo__rodape {
+    height: 75px;
+    margin-bottom: 2em;
+}
+
+.link_lista-completa {
+    display: flex;
+    justify-content: center;
+}
+
+.link__lista a {
+  margin: 1em 0.5em;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--branco-principal);
+  transition: 350ms;
+}
+
+.link__lista a:hover {
+    color:  #A8DAE5;
+}
+
+.link__lista a:active {
+    color: #800080;
+}
+
+.frase__rodape {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cinza-secundario);
+    margin: 1em 10em 0 10em;
 }
